@@ -35,9 +35,10 @@ const CybersecurityToolkit = () => {
 
       {/* Features */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
         className="glass-card rounded-xl p-8 mb-12"
       >
         <h2 className="text-xl font-bold text-foreground mb-6">Features</h2>
@@ -53,9 +54,10 @@ const CybersecurityToolkit = () => {
 
       {/* Pricing & Buy */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
         className="glass-card rounded-xl p-8 text-center"
       >
         <p className="text-muted-foreground text-sm mb-2">One-time payment</p>

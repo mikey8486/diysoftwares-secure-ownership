@@ -13,8 +13,9 @@ interface ProductCardProps {
 
 const ProductCard = ({ name, description, price, href, icon, index }: ProductCardProps) => (
   <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    animate={{ opacity: 1, y: 0 }}
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.3 }}
     transition={{ delay: index * 0.15, duration: 0.5 }}
     className="glass-card rounded-xl p-6 flex flex-col gap-4 transition-all duration-300 group"
   >
