@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ShieldCheck, Check, Eye, ShoppingBag, Terminal } from "lucide-react";
-import StatCounter from "@/components/StatCounter";
+import { ShieldCheck, Check, Terminal } from "lucide-react";
 
 const features = [
   "Network scanning & vulnerability detection",
@@ -33,11 +32,6 @@ const CybersecurityToolkit = () => {
         </p>
       </motion.div>
 
-      {/* Stats */}
-      <div className="flex flex-wrap gap-6 justify-center mb-12">
-        <StatCounter pageName="cybersecurity-toolkit" label="Views" icon={<Eye size={16} />} trackVisit />
-        <StatCounter pageName="cybersecurity-toolkit" label="Purchases" icon={<ShoppingBag size={16} />} />
-      </div>
 
       {/* Features */}
       <motion.div

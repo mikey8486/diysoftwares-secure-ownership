@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { KeyRound, Check, Eye, ShoppingBag, Monitor, Terminal } from "lucide-react";
-import StatCounter from "@/components/StatCounter";
+import { KeyRound, Check, Monitor, Terminal } from "lucide-react";
 
 const features = [
   "AES-256 encryption for all stored passwords",
@@ -33,11 +32,6 @@ const PasswordManager = () => {
         </p>
       </motion.div>
 
-      {/* Stats */}
-      <div className="flex flex-wrap gap-6 justify-center mb-12">
-        <StatCounter pageName="password-manager" label="Views" icon={<Eye size={16} />} trackVisit />
-        <StatCounter pageName="password-manager" label="Purchases" icon={<ShoppingBag size={16} />} />
-      </div>
 
       {/* Features */}
       <motion.div
