@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ShieldCheck, Check, Eye, ShoppingBag, Terminal } from "lucide-react";
-import StatCounter from "@/components/StatCounter";
+import { ShieldCheck, Check, Terminal } from "lucide-react";
 
 const features = [
   "Network scanning & vulnerability detection",
@@ -33,17 +32,13 @@ const CybersecurityToolkit = () => {
         </p>
       </motion.div>
 
-      {/* Stats */}
-      <div className="flex flex-wrap gap-6 justify-center mb-12">
-        <StatCounter pageName="cybersecurity-toolkit" label="Views" icon={<Eye size={16} />} trackVisit />
-        <StatCounter pageName="cybersecurity-toolkit" label="Purchases" icon={<ShoppingBag size={16} />} />
-      </div>
 
       {/* Features */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
         className="glass-card rounded-xl p-8 mb-12"
       >
         <h2 className="text-xl font-bold text-foreground mb-6">Features</h2>
@@ -59,9 +54,10 @@ const CybersecurityToolkit = () => {
 
       {/* Pricing & Buy */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
         className="glass-card rounded-xl p-8 text-center"
       >
         <p className="text-muted-foreground text-sm mb-2">One-time payment</p>

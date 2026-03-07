@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Shield, Eye, ShoppingBag, Lock, Zap, Heart, Mail, ArrowRight } from "lucide-react";
-import StatCounter from "@/components/StatCounter";
+import { Shield, Lock, Zap, Heart, Mail, ArrowRight } from "lucide-react";
 
 const Home = () => {
   return (
@@ -30,26 +29,10 @@ const Home = () => {
             >
               View Products <ArrowRight size={20} />
             </Link>
-            <a
-              href="mailto:diysoftwares@gmail.com"
-              className="px-8 py-4 rounded-xl border border-border text-foreground font-semibold text-lg hover:border-primary/50 hover:shadow-glow transition-all inline-flex items-center justify-center gap-2"
-            >
-              <Mail size={20} /> Contact Us
-            </a>
           </div>
         </motion.div>
       </section>
 
-      {/* Stats Bar */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.4 }}
-        className="glass-card rounded-xl p-6 mb-16 flex flex-wrap gap-8 justify-center"
-      >
-        <StatCounter pageName="homepage" label="Visitors" icon={<Eye size={16} />} trackVisit />
-        <StatCounter pageName="homepage" label="Purchases" icon={<ShoppingBag size={16} />} />
-      </motion.section>
 
       {/* Values Grid */}
       <section className="grid md:grid-cols-3 gap-6 mb-20">
@@ -72,9 +55,10 @@ const Home = () => {
         ].map((item, i) => (
           <motion.div
             key={item.title}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 + i * 0.15 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ delay: i * 0.15, duration: 0.6 }}
             className="glass-card rounded-xl p-6 text-center"
           >
             <div className="w-14 h-14 rounded-lg bg-muted flex items-center justify-center text-primary mx-auto mb-4">
@@ -88,9 +72,10 @@ const Home = () => {
 
       {/* Lifetime Support */}
       <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.8 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
         className="glass-card rounded-xl p-8 mb-20 text-center"
       >
         <Heart className="text-primary mx-auto mb-4" size={32} />
@@ -102,9 +87,10 @@ const Home = () => {
 
       {/* Custom Development CTA */}
       <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
         className="text-center mb-20"
       >
         <h2 className="text-2xl font-bold text-foreground mb-3">Need Custom Software?</h2>
