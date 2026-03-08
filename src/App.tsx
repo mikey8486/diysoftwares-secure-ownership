@@ -7,6 +7,11 @@ import PasswordManager from "./pages/PasswordManager";
 import CybersecurityToolkit from "./pages/CybersecurityToolkit";
 import DownloadPasswordManager from "./pages/DownloadPasswordManager";
 import DownloadCybersecurityToolkit from "./pages/DownloadCybersecurityToolkit";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import ForgotPassword from "./pages/ForgotPassword";
+import ResetPassword from "./pages/ResetPassword";
+import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -21,6 +26,11 @@ function App() {
           <Route path="/product/cybersecurity-toolkit" element={<CybersecurityToolkit />} />
           <Route path="/download/password-manager" element={<DownloadPasswordManager />} />
           <Route path="/download/cybersecurity-toolkit" element={<DownloadCybersecurityToolkit />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
