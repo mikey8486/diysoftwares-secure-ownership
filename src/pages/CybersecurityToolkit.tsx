@@ -65,7 +65,7 @@ const CybersecurityToolkit = () => {
         <p className="text-muted-foreground text-sm mb-8">Lifetime support included • No subscriptions</p>
 
         <a
-          href="https://github.com/mikey8486/Cybersecurity-Toolkit/releases/latest"
+          href="https://diycrafts5.gumroad.com/l/cidao"
           target="_blank"
           rel="noopener noreferrer"
           className="gradient-btn px-8 py-4 rounded-xl text-primary-foreground font-bold text-lg inline-flex items-center justify-center gap-3"
