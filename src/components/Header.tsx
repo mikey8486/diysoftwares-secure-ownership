@@ -25,7 +25,7 @@ const Header = () => {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="DIYsoftwares" className="h-10" />
+          <img src={logo} alt="DIYsoftwares" className="h-14" />
         </Link>
 
         {/* Desktop Nav */}
