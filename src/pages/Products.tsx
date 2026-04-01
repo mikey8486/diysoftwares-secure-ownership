@@ -39,7 +39,7 @@ const Products = () => {
   const [sort, setSort] = useState<SortMode>("newest");
 
   const sorted = [...products].sort((a, b) => {
-    if (sort === "newest") return a.created - b.created;
+    if (sort === "newest") return b.created - a.created;
     return b.priceNum - a.priceNum;
   });
 
