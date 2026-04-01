@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { KeyRound, ShieldCheck, ArrowUpDown } from "lucide-react";
+import { KeyRound, ShieldCheck, ArrowUpDown, Gamepad2 } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 
 type SortMode = "newest" | "price-high";
