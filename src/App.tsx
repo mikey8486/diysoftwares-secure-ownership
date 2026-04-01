@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import PasswordManager from "./pages/PasswordManager";
 import CybersecurityToolkit from "./pages/CybersecurityToolkit";
+import StealthGameBooster from "./pages/StealthGameBooster";
 import DownloadPasswordManager from "./pages/DownloadPasswordManager";
 import DownloadCybersecurityToolkit from "./pages/DownloadCybersecurityToolkit";
 import Login from "./pages/Login";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/product/password-manager" element={<PasswordManager />} />
           <Route path="/product/cybersecurity-toolkit" element={<CybersecurityToolkit />} />
+          <Route path="/product/stealth-game-booster" element={<StealthGameBooster />} />
           <Route path="/download/password-manager" element={<DownloadPasswordManager />} />
           <Route path="/download/cybersecurity-toolkit" element={<DownloadCybersecurityToolkit />} />
           <Route path="/login" element={<Login />} />

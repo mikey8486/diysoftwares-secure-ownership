@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { KeyRound, ShieldCheck, ArrowUpDown } from "lucide-react";
+import { KeyRound, ShieldCheck, ArrowUpDown, Gamepad2 } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 
 type SortMode = "newest" | "price-high";
@@ -23,6 +23,15 @@ const products = [
     href: "/product/cybersecurity-toolkit",
     icon: <ShieldCheck size={28} />,
     created: 1,
+  },
+  {
+    name: "Stealth Game Booster PRO",
+    description: "Close background apps, boost your game's priority, and restore apps instantly. Play smoother and faster — no lag, no hassle!",
+    price: "$29.99",
+    priceNum: 29.99,
+    href: "/product/stealth-game-booster",
+    icon: <Gamepad2 size={28} />,
+    created: 3,
   },
 ];
 
