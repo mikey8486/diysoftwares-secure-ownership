@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import PasswordManager from "./pages/PasswordManager";
 import CybersecurityToolkit from "./pages/CybersecurityToolkit";
+import StealthGameBooster from "./pages/StealthGameBooster";
 import DownloadPasswordManager from "./pages/DownloadPasswordManager";
 import DownloadCybersecurityToolkit from "./pages/DownloadCybersecurityToolkit";
 import Login from "./pages/Login";
